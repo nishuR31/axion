@@ -1,0 +1,26 @@
+{
+  "name": "yt-chat-application",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx  concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "npm run start --prefix frontend",
+    "backend": "npm run backend --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Surendrakumarpatel/yt-chat-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Surendrakumarpatel/yt-chat-application/issues"
+  },
+  "homepage": "https://github.com/Surendrakumarpatel/yt-chat-application#readme",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

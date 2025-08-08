@@ -28,15 +28,15 @@ const SendInput = () => {
     }
     return (
         <form onSubmit={onSubmitHandler} className='px-4 my-3'>
-            <div className='w-full relative'>
+            <div className='relative w-full'>
                 <input
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     type="text"
                     placeholder='Send a message...'
-                    className='border text-sm rounded-lg block w-full p-3 border-zinc-500 bg-gray-600 text-white'
+                    className='block w-full p-3 text-sm text-white bg-gray-600 border rounded-lg border-zinc-500'
                 />
-                <button type="submit" className='absolute flex inset-y-0 end-0 items-center pr-4'>
+                <button type="submit" className='absolute inset-y-0 flex items-center pr-4 end-0'>
                     <IoSend />
                 </button>
             </div>
