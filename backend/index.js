@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 const corsOption = {
-  origin: "https://axion-hqfl.onrender.com",
+  origin: "axio-n.vercel.app",
   // origin: "http://localhost:3000",
   credentials: true,
 };
@@ -38,4 +38,5 @@ server.listen(PORT, "0.0.0.0", () => {
   connectDB();
   console.log(`Server fired up : http://localhost:${PORT}`);
 });
+
 
