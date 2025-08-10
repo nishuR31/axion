@@ -31,7 +31,7 @@ const Signup = () => {
         toast.success(res.data.message);
       }
     } catch (error) {
-      toast.error(error.response.data.message);
+      toast.error("Error signing you up.");
       console.log(error);
     }
     setUser({
@@ -120,5 +120,6 @@ const Signup = () => {
     </div>
   )
 }
+
 
 export default Signup
