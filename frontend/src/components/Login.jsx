@@ -24,17 +24,19 @@ const Login = () => {
         },
         withCredentials: true,
       });
+      console.table(res);
+
       navigate("/");
       console.log(res);
       dispatch(setAuthUser(res.data));
+      setUser({
+        username: "",
+        password: "",
+      });
     } catch (error) {
       toast.error(error.response.data.message);
       console.log(error);
     }
-    setUser({
-      username: "",
-      password: "",
-    });
   };
   return (
     <div className="mx-auto min-w-96 transition-all delay-[2s] ease-in">

@@ -8,7 +8,8 @@ const Message = ({message}) => {
     useEffect(()=>{
         scroll.current?.scrollIntoView({behavior:"smooth"});
     },[message]);
-    
+          console.table(message);
+
     return (
         <div ref={scroll} className={`chat ${message?.senderId === authUser?._id ? 'chat-end' : 'chat-start'}`}>
             <div className="chat-image avatar">

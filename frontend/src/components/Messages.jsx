@@ -8,6 +8,8 @@ const Messages = () => {
     useGetMessages();
     useGetRealTimeMessage();
     const { messages } = useSelector(store => store.message);
+          console.table(messages);
+
     return (
         <div className='px-4 flex-1 overflow-auto'>
             {
